@@ -1,4 +1,4 @@
-package com.creation.model.abstractfactorymodel;
+package com.creation.model.abstractfactorymodel.factory;
 
 import java.io.Serializable;
 

@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import com.creation.model.abstractfactorymodel.cpu.Cpu;
 import com.creation.model.abstractfactorymodel.cpu.CpuFactory;
+import com.creation.model.abstractfactorymodel.factory.AbstractFactory;
 import com.creation.model.abstractfactorymodel.mainboard.Mainboard;
 import com.creation.model.abstractfactorymodel.mainboard.MainboardFactory;
 //cpu和主板组装

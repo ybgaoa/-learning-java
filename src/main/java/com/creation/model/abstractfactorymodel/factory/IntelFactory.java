@@ -1,4 +1,4 @@
-package com.creation.model.abstractfactorymodel;
+package com.creation.model.abstractfactorymodel.factory;
 
 import com.creation.model.abstractfactorymodel.cpu.Cpu;
 import com.creation.model.abstractfactorymodel.cpu.IntelCpu;
