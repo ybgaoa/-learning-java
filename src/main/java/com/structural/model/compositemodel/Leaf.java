@@ -3,10 +3,7 @@
  */
 package com.structural.model.compositemodel;
 
-/**
- * @author ybgaoa
- *
- */
+/*树叶构件(Leaf)角色：树叶对象是没有下级子对象的对象，定义出参加组合的原始对象的行为。*/
 public class Leaf extends Component{
 	/**
      * 叶子对象的名字

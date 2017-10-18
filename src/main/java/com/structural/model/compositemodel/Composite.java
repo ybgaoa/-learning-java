@@ -2,7 +2,8 @@ package com.structural.model.compositemodel;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*树枝构件(Composite)角色：代表参加组合的有下级子对象的对象。
+树枝构件类给出所有的管理子对象的方法，如add()、remove()以及getChild()。*/
 public class Composite extends Component {
 	/**
      * 用来存储组合对象中包含的子组件对象
