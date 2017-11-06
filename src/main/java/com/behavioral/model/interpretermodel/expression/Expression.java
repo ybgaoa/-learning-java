@@ -1,7 +1,8 @@
 package com.behavioral.model.interpretermodel.expression;
 
 import com.behavioral.model.interpretermodel.Context;
-
+/*抽象表达式(Expression)角色：声明一个所有的具体表达式角色都需要实现的抽象接口。
+这个接口主要是一个interpret()方法，称做解释操作。*/
 public abstract class Expression {
 	/**
      * 以环境为准，本方法解释给定的任何一个表达式
