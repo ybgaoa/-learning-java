@@ -8,9 +8,11 @@ import java.util.concurrent.Future;
 public class Main {
 
 	public static void main(String[] args) {
+		//通过Executors工厂类的newCachedThreadPool()方法创建一个ThreadPoolExecutor执行器对象
 		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newCachedThreadPool();
 		Task task = new Task();
 		System.out.println("main:executing the task");
+		//调用submit()方法将任务发送给执行器
 		Future<String> result = executor.submit(task);
 		try {
 			TimeUnit.SECONDS.sleep(2);

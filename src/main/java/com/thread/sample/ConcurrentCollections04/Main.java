@@ -21,6 +21,7 @@ DelayQueue类提供的常用方法：
  */
 public class Main {
 	public static void main(String[] args) throws InterruptedException {
+		//创建DelayQueue对象
 		DelayQueue<Event> queue = new DelayQueue<>();
 		Thread threads[] = new Thread[5];
 		for(int i=0;i<threads.length;i++){
@@ -44,6 +45,8 @@ public class Main {
 			int counter = 0;
 			Event event;
 			do{
+				//poll()方法提取并移除队列中的第一个元素，如果队列中没有有活动的元素，此方法返回null值。
+				//每调用一次poll()方法，如果返回一个Event对象，计数器加1
 				event = queue.poll();
 				if(event!=null) counter++;
 			}while(event!=null);

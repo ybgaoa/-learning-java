@@ -1,5 +1,7 @@
 package com.thread.sample.sample08;
 /**
+ * 使用非依赖属性实现同步
+ * 
  * 同步代码块
 即有synchronized关键字修饰的语句块。
 被该关键字修饰的语句块会自动被加上内置锁，从而实现同步

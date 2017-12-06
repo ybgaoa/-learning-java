@@ -1,5 +1,5 @@
 package com.thread.sample.sample02;
-
+//线程的中断
 public class Main {
 
 	public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class Main {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+		//中断线程
 		task.interrupt();
 	}
 

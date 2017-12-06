@@ -1,5 +1,5 @@
 package com.thread.sample.ConcurrentCollections05;
-
+//创建一个名为Contact的类
 public class Contact {
 	public String getName() {
 		return name;

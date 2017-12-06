@@ -1,5 +1,5 @@
 package com.thread.sample.sample09;
-
+//创建打印工作类Job
 public class Job implements Runnable {
 	private PrintQueue printQueue;
 	public Job(PrintQueue printQueue){

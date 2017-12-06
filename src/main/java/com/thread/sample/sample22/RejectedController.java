@@ -2,7 +2,8 @@ package com.thread.sample.sample22;
 
 import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;
-
+//创建一个名为RejectedController的类，并实现RejectedExecutionHandler接口，然后实现接口的rejectedExecution()方法，
+//在控制台输出已被拒绝的任务的名称和执行器的状态
 public class RejectedController implements RejectedExecutionHandler {
 
 	@Override

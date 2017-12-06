@@ -6,11 +6,15 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Phaser;
 import java.util.concurrent.TimeUnit;
-
+//创建文件查找类，它将在一个文件夹及其子文件夹中查找过去24小时内修改过的指定扩展名的文件
 public class FileSearch implements Runnable {
+	//用来存储查找的文件夹
 	private String initPath;
+	//用来存储要查找的文件的扩展名
 	private String end;
+	//用来存储查找到的文件的完整路径
 	private List<String> results;
+	//声明一个私有的Phaser属性，用来控制任务不同阶段的同步
 	private Phaser phaser;
 	
 	public FileSearch(String initPath,String end,Phaser phaser){

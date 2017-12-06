@@ -3,12 +3,15 @@ package com.thread.sample.ConcurrentCollections02;
 import java.util.Date;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.TimeUnit;
-
+//创建一个名为Client的类
 public class Client implements Runnable {
+	//声明一个私有的LinkedBlockingDeque类属性requestList
 	private LinkedBlockingDeque<String> requestList;
+	
 	public Client(LinkedBlockingDeque<String> requestList){
 		this.requestList = requestList;
 	}
+	//实现run()方法。使用requestList对象的put()方法，每两秒向列表requestList中插入5个字符串。重复3次
 	@Override
 	public void run() {
 		for(int i=0;i<3;i++){

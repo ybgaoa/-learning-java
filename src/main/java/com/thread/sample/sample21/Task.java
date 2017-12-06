@@ -1,7 +1,7 @@
 package com.thread.sample.sample21;
 
 import java.util.concurrent.Callable;
-
+//创建任务类
 public class Task implements Callable<String> {
 
 	@Override

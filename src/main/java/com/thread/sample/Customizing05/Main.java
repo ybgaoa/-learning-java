@@ -2,7 +2,7 @@ package com.thread.sample.Customizing05;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
-
+//定制运行在定时线程池中的任务
 public class Main {
 	public static void main(String[] args) {
 		MyScheduledThreadPoolExecutor executor = new MyScheduledThreadPoolExecutor(2);

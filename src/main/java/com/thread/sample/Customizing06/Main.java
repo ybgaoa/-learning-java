@@ -3,7 +3,7 @@ package com.thread.sample.Customizing06;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.TimeUnit;
-
+//通过实行ThreadFactory接口为Fork/Join框架生成定制线程
 public class Main {
 	public static void main(String[] args) {
 		MyWorkerThreadFactory factory = new MyWorkerThreadFactory();

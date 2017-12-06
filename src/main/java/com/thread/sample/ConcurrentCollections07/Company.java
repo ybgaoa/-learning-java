@@ -1,5 +1,5 @@
 package com.thread.sample.ConcurrentCollections07;
-
+//创建一个名为Company的类
 public class Company implements Runnable {
 	private Account account;
 	public Company(Account account){

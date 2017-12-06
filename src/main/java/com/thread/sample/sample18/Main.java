@@ -9,6 +9,7 @@ import java.util.concurrent.Future;
 //运行多个任务并处理所有结果
 public class Main {
 	public static void main(String[] args) {
+		//通过Executors工厂类的newCachedThreadPool()方法创建一个执行器对象
 		ExecutorService executor = Executors.newCachedThreadPool();
 		List<Task> taskList = new ArrayList<>();
 		for(int i=0;i<3;i++){
@@ -23,6 +24,7 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		//调用shutdown()方法结束执行器
 		executor.shutdown();
 		System.out.println("Main:printing the results");
 		for(int i=0;i<resultList.size();i++){

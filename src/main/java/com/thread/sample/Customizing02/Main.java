@@ -3,7 +3,7 @@ package com.thread.sample.Customizing02;
 import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
-
+//实现基于优先级的Executor类
 public class Main {
 	public static void main(String[] args) {
 		//创建ThreadPoolExecutor对象

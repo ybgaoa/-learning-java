@@ -2,9 +2,10 @@ package com.thread.sample.ConcurrentCollections04;
 
 import java.util.Date;
 import java.util.concurrent.DelayQueue;
-
+//创建一个名为Task的类
 public class Task implements Runnable {
 	private int id;
+	//声明私有DelayQueue类的属性queue
 	private DelayQueue<Event> queue;
 	
 	public Task(int id,DelayQueue<Event> queue){

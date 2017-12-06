@@ -1,5 +1,5 @@
 package com.thread.sample.Customizing03;
-
+//实现ThreadFactory接口生成定制线程
 public class Main {
 	public static void main(String[] args) {
 		//创建MyThreadFactory对象

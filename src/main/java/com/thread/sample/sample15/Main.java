@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Exchanger;
 /**
+ * 并发任务间的数据交换
+ * 
  * Exchanger类
 java并发API还提供了一个同步辅助类，它就是Exchanger，它允许在并发任务之间交换数据。
 具体来说，Exchanger类允许在两个线程之间定义同步点。当两个线程都到达同步点时，它们交换数据结构，

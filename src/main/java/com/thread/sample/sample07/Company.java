@@ -1,5 +1,5 @@
 package com.thread.sample.sample07;
-
+//实现公司模拟类Company。它使用addAmount()方法对账户的余额进行充值
 public class Company implements Runnable {
 	private Account account;
 	public Company(Account account){

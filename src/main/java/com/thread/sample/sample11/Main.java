@@ -1,5 +1,8 @@
 package com.thread.sample.sample11;
 /**
+ * Ïß³ÌÍ¬²½¸¨ÖúÀà
+ * ×ÊÔ´µÄ²¢·¢·ÃÎÊ¿ØÖÆ
+ * 
  * ÐÅºÅÁ¿
 Èç¹ûÏß³ÌÒª·ÃÎÊÒ»¸ö¹²Ïí×ÊÔ´£¬Ëü±ØÐëÏÈ»ñÈ¡ÐÅºÅÁ¿¡£Èç¹ûÐÅºÅÁ¿µÄÄÚ²¿¼ÆÊýÆ÷´óÓÚ0£¬ÐÅºÅÁ¿½«¼õ1£¬È»ºóÔÊÐí·ÃÎÊÕâ¸ö¹²Ïí×ÊÔ´¡£¼ÆÊýÆ÷´óÓÚ0ÒâÎ¶×Å¿ÉÒÔÊ¹ÓÃµÄ×ÊÔ´£¬Òò´ËÏß³Ì½«±»ÔÊÐíÊ¹ÓÃÆäÖÐÒ»¸ö×ÊÔ´¡£
 ·ñÔò£¬Èç¹ûÐÅºÅÁ¿µÄ¼ÆÊýÆ÷µÈÓÚ0£¬ÐÅºÅÁ¿½«»á°ÑÏß³ÌÖÃÈëÐÝÃßÖ±ÖÁ¼ÆÊýÆ÷´óÓÚ0¡£¼ÆÊýÆ÷µÈÓÚ0µÄÊ±ºòÒâÎ¶×ÅËùÓÐµÄ¹²Ïí×ÊÔ´ÒÑ¾­±»ÆäËûÏß³ÌÊ¹ÓÃÁË£¬ËùÒÔÐèÒª·ÃÎÊÕâ¸ö¹²Ïí×ÊÔ´µÄÏß³Ì±ØÐëµÈ´ý¡£
@@ -14,13 +17,17 @@ SemaphoreÀàµÄ¹¹ÔìÆ÷Ìá¹©ÁËµÚ¶þ¸ö´«Èë²ÎÊý¡£Õâ¸ö²ÎÊýÊÇbooleanÐÍµÄ¡£Èç¹û´«ÈëfalseÖµ£
  *
  */
 public class Main {
-
 	public static void main(String[] args) {
+		/**
+		 * µ±Æô¶¯10¸öÏß³ÌÊ±£¬µÚÒ»¸ö»ñµÃÐÅºÅÁ¿µÄ Ïß³Ì½«ÄÜ¹»·ÃÎÊÁÙ½çÇø£¬ÆäÓàµÄÏß³Ì½«±»ÐÅºÅÁ¿×èÈû£¬Ö±µ½ÐÅºÅÁ¿±»ÊÍ·Å¡£
+		 * Ò»µ©ÐÅºÅÁ¿±»ÊÍ·Å£¬ÐÅºÅÁ¿½«Ñ¡ÔñÒ»¸öÕýÔÚµÈ´ýµÄÏß³Ì²¢ÔÊÐíËü·ÃÎÊÁÙ½çÇø£¬´Ó¶øËùÓÐµÄ¹¤×÷¶¼½«Ò»¸ö½ÓÒ»¸öµØ´òÓ¡ËüÃÇµÄÎÄµµ¡£
+		 */
 		PrintQueue printQueue = new PrintQueue();
 		Thread thread[] = new Thread[10];
 		for(int i=0;i<10;i++){
 			thread[i] = new Thread(new Job(printQueue),"Thread-"+i);
 		}
+		
 		for(int i=0;i<10;i++){
 			thread[i].start();
 		}

@@ -1,5 +1,5 @@
 package com.thread.sample.sample07;
-
+//实现一个ATM模拟类Bank。它使用subtractAmount()方法对账户余额进行扣除。
 public class Bank implements Runnable {
 	private Account account;
 	

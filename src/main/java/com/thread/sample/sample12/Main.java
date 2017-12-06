@@ -1,5 +1,7 @@
 package com.thread.sample.sample12;
 /**
+ * 等待多个并发事件的完成
+ * 
  * CountDownLatch类
 java并发API提供了CountDownLatch类，它是一个同步辅助类。在完成一组正在其他线程中执行的操作之前，它允许线程一直等待。
 这个类使用一个整数进行初始化，这个整数就是线程要等待完成的操作的数目。当一个线程要等待某些操作先执行完时，需要调用await()方法，

@@ -10,14 +10,17 @@ isInterrupted()方法和interrupted()方法的区别是：isInterrupted()方法不能改变inter
  *
  */
 public class PrimeGenerator extends Thread {
-
+	//覆盖run()方法。并在方法体内包含一个无限循环。在每次循环中，我们将处理从1开始的连续数。
+	//对每个数字，我们将计算它是不是一个质数，如果是的话就打印到控制台。
 	@Override
 	public void run() {
 		long number = 1L;
 		while(true){
+			//判断是否质数
 			if(isPrime(number)){
 				System.out.println("Number "+number+" is prime");
 			}
+			//调用isInterrupted()方法来检查线程是否被中断
 			if(isInterrupted()){
 				System.out.println("the prime generator has been interrupted");
 				return;

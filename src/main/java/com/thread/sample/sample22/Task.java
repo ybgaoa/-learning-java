@@ -1,7 +1,7 @@
 package com.thread.sample.sample22;
 
 import java.util.concurrent.TimeUnit;
-
+//创建一个任务类
 public class Task implements Runnable {
 	private String name;
 	public Task(String name){

@@ -2,7 +2,7 @@ package com.thread.sample.sample19;
 
 import java.util.Date;
 import java.util.concurrent.Callable;
-
+//创建一个任务类
 public class Task implements Callable<String> {
 	private String name;
 	public Task(String name){

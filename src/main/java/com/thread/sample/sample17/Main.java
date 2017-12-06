@@ -19,6 +19,7 @@ public class Main {
 			Integer number = random.nextInt(10);
 			System.out.println(number);
 			FactorialCalculator calculator = new FactorialCalculator(number);
+			//调用执行器的submit()方法发送FactorialCalculator任务给执行器，这个方法返回一个Future<Integer>对象来管理任务和得到的最终结果
 			Future<Integer> result = executor.submit(calculator);
 			resultList.add(result);
 		}
@@ -40,6 +41,7 @@ public class Main {
 			Future<Integer> result = resultList.get(i);
 			Integer number = null;
 			try {
+				//在调用Future对象的get()方法时，如果Future对象所控制的任务并未完成，那么这个方法将一直阻塞到任务完成
 				number = result.get();
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block

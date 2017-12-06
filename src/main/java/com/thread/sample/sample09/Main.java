@@ -1,5 +1,7 @@
 package com.thread.sample.sample09;
 /**
+ * 使用锁实现同步
+ * 
  * ReentrantLock类是一个可重入的互斥锁，重入锁是一种递归无阻塞的同步机制。ReentrantLock由最近成功获取锁，还没有释放的线程所拥有，当锁被另一个线程拥有时，调用lock的线程可以成功获取锁。如果锁已经被当前线程拥有，当前线程会立即返回。
 1、防止重复执行（忽略重复触发）
 ReentrantLock lock = new ReentrantLock(); 

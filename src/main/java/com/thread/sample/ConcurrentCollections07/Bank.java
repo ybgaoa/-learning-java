@@ -1,5 +1,5 @@
 package com.thread.sample.ConcurrentCollections07;
-
+//创建一个名为Bank的类，这个类模拟从账户中取钱
 public class Bank implements Runnable {
 	private Account account;
 	public Bank(Account account){

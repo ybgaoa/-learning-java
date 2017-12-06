@@ -1,5 +1,5 @@
 package com.thread.sample.sample13;
-
+//实现结果类，这个类将保存矩阵中每行找到指定数字的次数
 public class Results {
 	private int data[];
 	public Results(int size){

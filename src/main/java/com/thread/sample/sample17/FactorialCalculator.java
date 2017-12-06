@@ -8,6 +8,7 @@ public class FactorialCalculator implements Callable<Integer> {
 	public FactorialCalculator(Integer number){
 		this.number = number;
 	}
+	//实现call()方法，这个方法返回FactorialCalculator类的number属性的阶乘
 	@Override
 	public Integer call() throws Exception {
 		int result = 1;

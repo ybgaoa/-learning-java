@@ -1,5 +1,5 @@
 package com.thread.sample.Customizing10;
-
+//实行自己的原子对象
 public class Main {
 	public static void main(String[] args) {
 		ParkingCounter counter = new ParkingCounter(5);

@@ -1,6 +1,7 @@
 package com.thread.sample.sample03;
 
 import java.util.Date;
+//等待线程的终止
 /**
  * 
 在一些情况下，我们必须等待线程终止后，在执行其他任务，这时候我们使用Thread类的join()方法。
@@ -26,6 +27,7 @@ public class Main {
 		t2.start();
 		
 		try {
+			//使用join()方法等待两个线程的终止。join()方法会抛出InterruptedExceptiony异常。我们必须捕获并处理这个异常
 			t1.join();
 			t2.join();
 		} catch (InterruptedException e) {

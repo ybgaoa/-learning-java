@@ -3,7 +3,7 @@ package com.thread.sample.Customizing04;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-
+//实现ThreadFactory接口生成定制线程
 public class Main {
 	public static void main(String[] args) {
 		MyThreadFactory threadFactory = new MyThreadFactory("myThreadFactory");

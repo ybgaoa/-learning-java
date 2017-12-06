@@ -2,7 +2,7 @@ package com.thread.sample.sample16;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
-
+//创建一个服务器类，它将执行通过执行器接收到的每一个任务
 public class Server {
 	//声明ThreadPoolExecutor类对象
 	private ThreadPoolExecutor executor;

@@ -1,7 +1,7 @@
 package com.thread.sample.ConcurrentCollections06;
 
 import java.util.concurrent.ThreadLocalRandom;
-
+//创建一个名为TaskLocalRandom的类
 public class TaskLocalRandom implements Runnable {
 	public TaskLocalRandom(){
 		/**

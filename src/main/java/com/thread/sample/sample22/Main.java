@@ -7,6 +7,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		RejectedController controller = new RejectedController();
+		//通过Executors工厂类的newCachedThreadPool()方法创建一个ThreadPoolExecutor执行器对象
 		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newCachedThreadPool();
 		executor.setRejectedExecutionHandler(controller);
 		System.out.println("main:starting");

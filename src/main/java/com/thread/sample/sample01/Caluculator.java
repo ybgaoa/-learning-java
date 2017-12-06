@@ -12,9 +12,9 @@ package com.thread.sample.sample01;
  * @author ybgaoa
  *
  */
-public class Caluculator_01 implements Runnable {
+public class Caluculator implements Runnable {
 	private int number;
-	public Caluculator_01(int number){
+	public Caluculator(int number){
 		this.number = number;
 	}
 	@Override

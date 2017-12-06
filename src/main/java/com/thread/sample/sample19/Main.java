@@ -8,13 +8,15 @@ import java.util.concurrent.TimeUnit;
 public class Main {
 
 	public static void main(String[] args) {
+		//通过Executors工厂类的newScheduledThreadPool()方法创建一个ScheduledThreadPoolExecutor执行器，并传递1作为参数
 		ScheduledThreadPoolExecutor executor = (ScheduledThreadPoolExecutor) Executors.newScheduledThreadPool(1);
 		System.out.println("main:starting at:"+new Date());
 		for(int i=0;i<5;i++){
 			Task task = new Task("task-"+i);
-			//方法参数说明：1.即将执行的任务；2.任务执行前所要等待的时间；3.等待时间的单位，由TimeUint类的一个常量来指定
+			//方法参数说明：1.即将执行的任务；2.任务执行前所要等待的时间，即延迟时间；3.等待时间的单位，由TimeUint类的一个常量来指定
 			executor.schedule(task, i+1, TimeUnit.SECONDS);
 		}
+		//关闭执行器
 		executor.shutdown();
 		try {
 			//调用执行器awaitTermination()方法等待所有任务结束

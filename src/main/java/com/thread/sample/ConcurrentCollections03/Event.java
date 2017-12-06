@@ -1,5 +1,5 @@
 package com.thread.sample.ConcurrentCollections03;
-//实现Comparable接口的compareTo()方法，比较本身对象和参数对象之间的优先级
+//创建一个名为Event的类，实现Comparable接口的compareTo()方法，比较本身对象和参数对象之间的优先级
 public class Event implements Comparable<Event> {
 	public int getThread() {
 		return thread;

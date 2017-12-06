@@ -1,5 +1,5 @@
 package com.thread.sample.sample10;
-
+//创建写入类，这个类将修改价格信息PricesInfo类的属性值
 public class Writer implements Runnable {
 	private PricesInfo pricesInfo;
 	public Writer(PricesInfo pricesInfo){

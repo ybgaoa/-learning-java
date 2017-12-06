@@ -1,5 +1,5 @@
 package com.thread.sample.sample10;
-
+//使用读写锁实现同步数据访问
 public class Main {
 	public static void main(String[] args) {
 		PricesInfo pricesInfo = new PricesInfo();

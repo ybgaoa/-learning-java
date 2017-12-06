@@ -2,6 +2,8 @@ package com.thread.sample.sample14;
 
 import java.util.concurrent.Phaser;
 /**
+ * 并发阶段任务的运行
+ * 
  * Phaser类
 java并发API还提供了一个更复杂、更强大的同步辅助类，即Phaser，它允许执行并发多阶段任务。当我们有并发任务并且需要分解成几步执行时，这种机制就非常适用。Phaser类机制是在每一步结束的位置对线程进行同步，当所有的线程都完成了这一步，才允许执行下一步。
 常用方法：

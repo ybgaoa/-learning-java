@@ -6,7 +6,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
-
+//定制ThreadPoolExecutor类
 public class Main {
 	public static void main(String[] args) {
 		//创建MyExecutor对象

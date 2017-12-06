@@ -15,6 +15,7 @@ public class MyThreadFactory implements ThreadFactory {
         this.name = name;
         stats = new ArrayList<String>();
     }
+    //实现newThread()方法。这个方法以Runnable接口对象为参数，并返回参数对应的线程对象
     @Override
     public Thread newThread(Runnable r) {
         Thread  t = new Thread(r, name+"-Thread_"+counter);

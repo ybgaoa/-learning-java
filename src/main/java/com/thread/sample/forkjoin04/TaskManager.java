@@ -3,7 +3,7 @@ package com.thread.sample.forkjoin04;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ForkJoinTask;
-
+//创建一个名称为TaskManager的类，利用这个类来取消ForkJoinPool类中所有的任务
 public class TaskManager {
 	private List<ForkJoinTask<Integer>> tasks;
 	public TaskManager(){

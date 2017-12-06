@@ -1,5 +1,7 @@
 package com.thread.sample.sample07;
 /**
+ * 使用synchronized实现同步方法
+ * 
  * 同步方法
 即有synchronized关键字修饰的方法。
 由于java的每个对象都有一个内置锁，当用此关键字修饰方法时，内置锁会保护整个方法。在调用该方法前，需要获得内置锁，否则就处于阻塞状态。
@@ -26,6 +28,7 @@ public class Main {
 		bankThread.start();
 		
 		try {
+			//使用join()方法等待这两个线程运行完成，然后打印账户的最终余额到控制台
 			companyThread.join();
 			bankThread.join();
 			System.out.println("Account:Final Balance:"+account.getBalance());

@@ -1,7 +1,7 @@
 package com.thread.sample.ConcurrentCollections07;
 
 import java.util.concurrent.atomic.AtomicLong;
-
+//创建一个名为Account的类来模拟银行账户
 public class Account {
 	private AtomicLong balance;
 	public Account(){

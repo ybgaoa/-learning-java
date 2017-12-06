@@ -9,7 +9,9 @@ public class Main {
 		DocumentMock mock = new DocumentMock();
 		String[][] document = mock.generateDocument(100, 1000, "the");
 		DocumentTask task = new DocumentTask(document,0,100,"the");
+		//采用无参的构造器创建一个ForkJoinPool对象
 		ForkJoinPool pool = new ForkJoinPool();
+		//然后调用execute()方法在线程池里执行这个任务
 		pool.execute(task);
 		do{
 			System.out.println("*************************");
@@ -24,9 +26,10 @@ public class Main {
 				e.printStackTrace();
 			}
 		}while(!task.isDone());
-		
+		//调用shutdown()方法关闭线程池
 		pool.shutdown();
 		try {
+			//调用awaitTermination()方法等待任务执行结束
 			pool.awaitTermination(1, TimeUnit.DAYS);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block

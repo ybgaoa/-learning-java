@@ -1,5 +1,5 @@
 package com.thread.sample.sample10;
-
+//创建读取类，这个类将读取价格信息PricesInfo类的属性
 public class Reader implements Runnable {
 	private PricesInfo pricesInfo;
 	public Reader(PricesInfo pricesInfo){

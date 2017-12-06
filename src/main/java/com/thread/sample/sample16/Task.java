@@ -2,7 +2,7 @@ package com.thread.sample.sample16;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
-
+//创建一个任务类，实现将被web服务器执行的任务
 public class Task implements Runnable {
 	private Date initDate;
 	private String name;

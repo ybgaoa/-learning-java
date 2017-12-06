@@ -2,7 +2,7 @@ package com.thread.sample.forkjoin01;
 
 import java.util.List;
 import java.util.concurrent.RecursiveAction;
-//由于Task类继承了RecursiveAction类，因此不返回结果
+//创建任务类，由于Task类继承了RecursiveAction类，因此不返回结果
 public class Task extends RecursiveAction {
 	private List<Product> products;
 	//声明两个int属性，这两个属性将决定任务执行时对产品的分块

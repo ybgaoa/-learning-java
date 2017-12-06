@@ -5,10 +5,11 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
-
+//在执行器中周期性执行任务
 public class Main {
 
 	public static void main(String[] args) {
+		//通过Executors工厂类的newScheduledThreadPool()方法创建一个ScheduledExecutorService执行器，并传递1作为参数
 		ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
 		System.out.println("Main:starting at:"+new Date());
 		Task task = new Task("task");
@@ -25,6 +26,7 @@ public class Main {
 				e.printStackTrace();
 			}
 		}
+		//关闭执行器
 		executor.shutdown();
 		try {
 			TimeUnit.SECONDS.sleep(5);

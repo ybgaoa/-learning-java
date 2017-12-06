@@ -1,8 +1,9 @@
 package com.thread.sample.ConcurrentCollections05;
 
 import java.util.concurrent.ConcurrentSkipListMap;
-
+//创建一个名为Task的类
 public class Task implements Runnable {
+	//声明一个私有的ConcurrentSkipListMap类型的map
 	private ConcurrentSkipListMap<String,Contact> map;
 	private String id;
 	

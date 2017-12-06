@@ -33,8 +33,11 @@ java提供了一些可以用于并发程序中的数据集合，它们不会引起任何问题。一般来说，java
 public class Main {
 
 	public static void main(String[] args) {
+		//创建ConcurrentLinkedDeque对象
 		ConcurrentLinkedDeque<String> list = new ConcurrentLinkedDeque<>();
+		//创建线程数组
 		Thread threads[] = new Thread[100];
+		//创建AddTask对象以及其对应的运行线程，然后启动线程
 		for(int i=0;i<threads.length;i++){
 			AddTask task = new AddTask(list);
 			threads[i] = new Thread(task);
@@ -42,6 +45,7 @@ public class Main {
 		}
 		
 		System.out.println("main:"+threads.length+" AddTask threads have been launched");
+		//使用join()方法等待线程完成
 		for(int i=0;i<threads.length;i++){
 			try {
 				threads[i].join();
@@ -51,12 +55,14 @@ public class Main {
 			}
 		}
 		System.out.println("main:size of the list:"+list.size());
+		//创建PollTask对象以及其对应的运行线程，然后启动线程
 		for(int i=0;i<threads.length;i++){
 			PollTask task = new PollTask(list);
 			threads[i] = new Thread(task);
 			threads[i].start();
 		}
 		System.out.println("main:"+threads.length+" polltask threads have been  launched");
+		//使用join()方法等待线程完成
 		for(int i=0;i<threads.length;i++){
 			try {
 				threads[i].join();

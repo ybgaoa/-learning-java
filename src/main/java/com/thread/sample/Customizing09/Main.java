@@ -1,7 +1,7 @@
 package com.thread.sample.Customizing09;
 
 import java.util.concurrent.TimeUnit;
-
+//实行基于优先级的传输队列
 public class Main {
 	public static void main(String[] args) {
 		MyPriorityTransferQueue<Event> buffer = new MyPriorityTransferQueue<Event>();

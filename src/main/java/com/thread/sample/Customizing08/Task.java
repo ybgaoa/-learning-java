@@ -1,7 +1,6 @@
 package com.thread.sample.Customizing08;
 
 import java.util.concurrent.TimeUnit;
-
 //创建Task类，实现Runnable接口
 public class Task implements Runnable {
 	private MyLock lock;
